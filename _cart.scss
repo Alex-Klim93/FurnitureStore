@@ -1,0 +1,197 @@
+
+.top__cart {
+    height: 400px;
+    background-image: url(img/header_cart.png);
+    background-position: center;
+    background-position: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+
+.cart{
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 32px;
+    row-gap: 64px;
+    &__content {
+        grid-column: span 8;
+    }
+
+    &__name-box {
+        margin-bottom: 14px;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 25px;
+    }
+
+    &__item {
+        border-top: 0.5px solid rgb(202, 205, 216);
+        padding-top: 32px;
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__item-first{
+        padding-top: 25px;
+    }
+    &__left {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__info {
+        display: grid;
+        width: 267px;
+        gap: 15px;
+    }
+    .product__h3-cart{
+        padding-top:0px;
+        margin-bottom: -7px;
+    }
+    .product__text{
+        margin-bottom: 0px;
+    }
+    .product__price-cart{
+        color: rgb(5, 5, 5);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0%;
+    }
+    &__link-box {
+        display: flex;
+        gap: 30px;
+        color: rgb(5, 5, 5);
+
+        .cart__a {
+            color: rgb(0, 0, 0);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 210%;
+            letter-spacing: 0px;
+            text-align: center;
+            text-decoration-line: underline;
+        }
+    }
+
+
+    &__left-input {
+        border-radius: 6px;
+        border: none;
+        padding-right: 14px;
+        border-radius: 6px;
+        background: rgb(247, 246, 246);
+        width: 57px;
+        height: 51px;
+        color: rgb(0, 0, 0);
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 210%;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+
+    &__button-box {
+        display: flex;
+        gap: 7px;
+        margin-top: 18px;
+    }
+
+    &__button {
+        box-sizing: border-box;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 50px;
+        background-color: white;
+
+        width: 200px;
+        height: 37px;
+
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+
+    &__form {
+        border-radius: 20px;
+        background: rgb(247, 246, 246);
+        grid-column: span 4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 42px;
+        height: 556px;
+
+    }
+
+    &__form-title {
+        margin-bottom: 35px;
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+
+    &__form-input {
+        border: none;
+        border-bottom: 1px solid rgb(202, 205, 216);
+        background: none;
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0px;
+    }
+    &__form-input::placeholder{
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0px;
+    }
+    &__form-input-box {
+        margin-bottom: 65px;
+        display: grid;
+        width: 288px;
+        gap: 44px;
+    }
+
+    &__result {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 18px;
+        font-size: 24px;
+        font-weight: 200;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: center;
+
+        .result__rub {
+            color: rgb(0, 0, 0);
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 29px;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+    }
+
+    &__button-form {
+        background: none;
+        width: 290px;
+    }
+
+}
